@@ -11,7 +11,7 @@
 <form name='registration' onSubmit="return formValidation();"  method="post">
 
 	<label for="uname">Name (Legal/Official)</label>
-	<input type="text" name="uname" value="" placeholder="Capital letters only" required><br>
+	<input type="text" name="uname" value="" title="Capital letters only" required><br>
 	
 	<label for="matricNo">Matric no</label>
 	<input type="text" name="matricNo" value="" size=7 required><br>
@@ -19,14 +19,20 @@
 	<label for="cAddress">Current Address</label>
 	<textarea rows="5" cols="" form="registration" name="cAddress" required></textarea><br>
 	
+	<label for="hAddress">Home Address</label>
+	<textarea rows="5" cols="" form="registration" name="hAddress" required></textarea><br>
+	
 	<label for="email">Email</label>
 	<input type="email" name="email" value="" required><br>
 	
 	<label for="password">Password</label>
 	<input type="password" name="password" value="" required><br>
 	
-	<label for="phoneNum">Number</label>
-	<input type="tel" name="phoneNum" title="insert phone number" required><br>
+	<label for="mPhoneNum">Mobile Number</label>
+	<input type="tel" name="phoneNum" title="insert mobile phone number" required><br>
+	
+	<label for="hPhoneNum">Home Number</label>
+	<input type="tel" name="phoneNum" title="insert home phone number" required><br>
 	
 	<input type="submit" name="submit" value="Submit" />
 </form>
