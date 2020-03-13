@@ -50,8 +50,13 @@ var phoneNum_len = phoneNum.value.length;
 var numbers = /^[0-9]+$/;
 if(phoneNum.value.match(numbers))
 {
-  
-  return true;
+  if (phoneNum.value.length == 0 || phoneNum.value.length < 10)
+	  {
+	    alert("Invalid length");
+	    PhoneNum.focus();
+	    return false;
+	  }
+	  return true;
 }
 else
 {
