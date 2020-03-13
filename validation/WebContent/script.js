@@ -22,7 +22,7 @@ function uname_validation(uname){
 
 function matricNo_validation(matricNo){
 
-	var numbers = /^[0-9]+$/;
+	var numbers = /^[0-9]{7}+$/;
 	if(matricNo.value.match(numbers))
 	{
 	  if (matricNo.value.length != 7)
